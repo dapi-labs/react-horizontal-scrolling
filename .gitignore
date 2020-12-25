@@ -1,0 +1,15 @@
+# system files
+*.log
+.DS_Store*
+.idea/
+
+# push to github
+!.babelrc
+!.gitignore
+!.npmignore
+
+# files
+node_modules/
+dist/
+src/style.js
+src/style.css

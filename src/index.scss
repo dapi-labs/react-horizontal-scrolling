@@ -1,0 +1,60 @@
+.HorizontalScroll {
+  touch-action: none;
+  .HorizontalScrollOuter {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    .HorizontalScrollInner {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      .HorizontalScrollInnerChildren {
+        flex-shrink: 0;
+      }
+    }
+  }
+  .HorizontalScrollTrack {
+    $paddingV: 12px;
+    $trackBorderRadius: 10px;
+    $trackheight: 2px;
+    padding: $paddingV + $trackheight / 2 0;
+    position: relative;
+    width: 100%;
+    &:after {
+      content: "";
+      position: absolute;
+      top: $paddingV;
+      left: 0;
+      right: 0;
+      height: $trackheight;
+      border-radius: $trackBorderRadius;
+      background: lighten(#222, 1%);
+      z-index: -1;
+    }
+    &:hover {
+      .HorizontalScrollTrackInner:after {
+        opacity: 1;
+      }
+    }
+    .HorizontalScrollTrackInner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: $trackBorderRadius;
+      cursor: pointer;
+      &:after {
+        content: "";
+        position: absolute;
+        top: $paddingV;
+        left: 0;
+        right: 0;
+        height: $trackheight;
+        border-radius: $trackBorderRadius;
+        background: #fff;
+        opacity: 0.5;
+        transition: opacity 0.25s ease-out;
+      }
+    }
+  }
+}

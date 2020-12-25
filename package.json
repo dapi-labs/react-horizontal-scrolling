@@ -1,0 +1,41 @@
+{
+  "name": "react-horizontal-scrolling",
+  "version": "0.1.0",
+  "description": "react horizontal scroll component",
+  "main": "dist/index.js",
+  "scripts": {},
+  "keywords": [
+    "react",
+    "horizontal",
+    "scroll"
+  ],
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/",
+      "src/style.js",
+      "src/style.css"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=^16.0.0",
+    "react-dom": ">=^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-function-bind": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "node-sass": "^5.0.0",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3"
+  },
+  "author": "chilllib",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ]
+}
