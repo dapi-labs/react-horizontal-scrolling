@@ -37,5 +37,9 @@
   "license": "MIT",
   "files": [
     "dist"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/chillib-io/react-horizontal-scrolling/issues"
+  },
+  "homepage": "https://github.com/chillib-io/react-horizontal-scrolling"
 }
