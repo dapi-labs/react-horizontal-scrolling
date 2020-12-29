@@ -119,8 +119,11 @@ export default class HorizontalScroll extends Component {
   }
 
   onWheel (e) {
-    const currentTrackLeft = document.getElementById(this.trackId).style.left || '0px'
-    this.updateTrackLeft(parseFloat(currentTrackLeft.replace('px', '')) + e.deltaY)
+    const currentTrack = document.getElementById(this.trackId)
+    if (currentTrack) {
+      const currentTrackLeft = currentTrack.style.left || '0px'
+      this.updateTrackLeft(parseFloat(currentTrackLeft.replace('px', '')) + e.deltaY)
+    }
   }
 
   onTrackMouseDown (e) {
