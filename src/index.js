@@ -176,6 +176,9 @@ export default class HorizontalScroll extends Component {
           <div
             id={this.innerId}
             className='HorizontalScrollInner'
+            onTouchStart={::this.onTrackMouseDown}
+            onTouchMove={::this.onTrackMouseMove}
+            onTouchEnd={::this.onTrackMouseUp}
           >
             {!isArrayChild &&
               <div className='HorizontalScrollInnerChildren'>{children}</div>}
