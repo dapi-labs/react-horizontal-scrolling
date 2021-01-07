@@ -147,6 +147,13 @@ export default class HorizontalScroll extends Component {
     document.onmousemove = null
   }
 
+  onTouchMove (e) {
+    const element = document.getElementById(this.trackId)
+    const pos1 = !this.prePosX ? 0 : this.prePosX - e.touches[0].clientX
+    this.prePosX = e.touches[0].clientX
+    this.updateTrackLeft(element.offsetLeft - pos1)
+  }
+
   /**
    * Set style tag in header
    * in this way we can insert default css
@@ -176,9 +183,7 @@ export default class HorizontalScroll extends Component {
           <div
             id={this.innerId}
             className='HorizontalScrollInner'
-            onTouchStart={::this.onTrackMouseDown}
-            onTouchMove={::this.onTrackMouseMove}
-            onTouchEnd={::this.onTrackMouseUp}
+            onTouchMove={::this.onTouchMove}
           >
             {!isArrayChild &&
               <div className='HorizontalScrollInnerChildren'>{children}</div>}
