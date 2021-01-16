@@ -1,4 +1,4 @@
-NODE_BIN     = node_modules/.bin
+NODE_BIN = node_modules/.bin
 SRC = src
 DIST = dist
 
