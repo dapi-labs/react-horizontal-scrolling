@@ -121,8 +121,9 @@ export default class HorizontalScroll extends Component {
   onWheel (e) {
     const currentTrack = document.getElementById(this.trackId)
     if (currentTrack) {
+      const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY
       const currentTrackLeft = currentTrack.style.left || '0px'
-      this.updateTrackLeft(parseFloat(currentTrackLeft.replace('px', '')) + e.deltaY)
+      this.updateTrackLeft(parseFloat(currentTrackLeft.replace('px', '')) + delta * 0.45)
     }
   }
 
