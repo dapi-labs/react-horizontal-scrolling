@@ -179,7 +179,14 @@ export default class HorizontalScroll extends Component {
     const { className, children, disabled } = this.props
     const { trackWidth } = this.state
     const isArrayChild = Array.isArray(children)
-    if (disabled) return children
+    if (disabled) {
+      return (
+        <div className={className}>
+          {children}
+        </div>
+      )
+    }
+
     return (
       <div className={`HorizontalScroll ${className || ''}`} ref={this.wrapperRef}>
         <div className='HorizontalScrollOuter' id={this.outerId} onWheel={::this.onWheel}>
