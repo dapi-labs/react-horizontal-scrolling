@@ -6,7 +6,8 @@ import cssStyle from './style'
 
 export default class HorizontalScroll extends Component {
   static propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
+    disabled: PropTypes.bool
   }
 
   constructor (props) {
@@ -175,9 +176,10 @@ export default class HorizontalScroll extends Component {
   }
 
   render () {
-    const { className, children } = this.props
+    const { className, children, disabled } = this.props
     const { trackWidth } = this.state
     const isArrayChild = Array.isArray(children)
+    if (disabled) return children
     return (
       <div className={`HorizontalScroll ${className || ''}`} ref={this.wrapperRef}>
         <div className='HorizontalScrollOuter' id={this.outerId} onWheel={::this.onWheel}>
