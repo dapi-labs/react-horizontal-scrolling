@@ -60,7 +60,7 @@ export default class HorizontalScroll extends Component {
   }
 
   onGlobalWheel (e) {
-    if (this.wrapperRef && this.wrapperRef.current.contains(e.target)) {
+    if (this.wrapperRef && this.wrapperRef.current && this.wrapperRef.current.contains(e.target)) {
       e.preventDefault()
     }
   }
