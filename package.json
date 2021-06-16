@@ -1,6 +1,6 @@
 {
   "name": "react-horizontal-scrolling",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "react horizontal scroll component",
   "main": "dist/index.js",
   "scripts": {},
