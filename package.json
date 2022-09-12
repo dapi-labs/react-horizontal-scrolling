@@ -1,8 +1,9 @@
 {
   "name": "react-horizontal-scrolling",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "react horizontal scroll component",
   "main": "dist/index.js",
+  "types": "./index.d.ts",
   "scripts": {},
   "keywords": [
     "react",
@@ -29,7 +30,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
-    "node-sass": "^5.0.0",
+    "sass": "^1.54.9",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3"
   },

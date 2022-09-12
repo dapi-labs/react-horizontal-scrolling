@@ -17,7 +17,7 @@
     $paddingV: 12px;
     $trackBorderRadius: 10px;
     $trackheight: 2px;
-    padding: $paddingV + $trackheight / 2 0;
+    padding: $paddingV + calc($trackheight / 2);
     position: relative;
     width: 100%;
     &:after {
