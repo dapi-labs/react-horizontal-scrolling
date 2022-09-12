@@ -1,9 +1,9 @@
 {
   "name": "react-horizontal-scrolling",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "description": "react horizontal scroll component",
   "main": "dist/index.js",
-  "types": "./index.d.ts",
+  "types": "index.d.ts",
   "scripts": {},
   "keywords": [
     "react",
@@ -37,7 +37,8 @@
   "author": "chilllib",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "bugs": {
     "url": "https://github.com/chillib-io/react-horizontal-scrolling/issues"
