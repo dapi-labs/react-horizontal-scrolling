@@ -1,6 +1,6 @@
 {
   "name": "react-horizontal-scrolling",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "react horizontal scroll component",
   "main": "dist/index.js",
   "types": "index.d.ts",
@@ -27,6 +27,7 @@
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-function-bind": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.19.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
